@@ -18,7 +18,7 @@ pub(crate) fn target() -> Target {
         options: TargetOptions {
             mcount: "\u{1}mcount".into(),
             frame_pointer: FramePointer::NonLeaf,
-            cpu: "apple-m1".into(),
+            cpu: "apple-a12".into(),
             max_atomic_width: Some(128),
             // FIXME: The leak sanitizer currently fails the tests, see #88132.
             supported_sanitizers: SanitizerSet::ADDRESS | SanitizerSet::CFI | SanitizerSet::THREAD,
